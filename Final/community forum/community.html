@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Local Community Forum</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Latest Threads</a></li>
+            <li><a href="#">General Discussion</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Local News and Weather</a></li>
+            <li><a href="#">Post Thread</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+        <label for="fruits">Select a fruit:</label>
+        <select id="fruits" name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+            <option value="grape">Grape</option>
+            <option value="strawberry">Strawberry</option>
+        </select>
+        </form>
+        <section class="post-thread">
+            <h2>Post a New Thread</h2>
+            <form id="post-form">
+                <label for="thread-title">Thread Title:</label><br>
+                <input type="text" id="thread-title" name="thread-title"><br>
+                <label for="thread-content">Thread Content:</label><br>
+                <textarea id="thread-content" name="thread-content"></textarea><br>
+                <input type="submit" value="Post Thread">
+            </form>
+        </section>
+        <section class="thread-answers">
+            <h2>Thread Answers</h2>
+            <ul>
+                <!-- Answers will be populated dynamically here -->
+            </ul>
+            <h3>Post an Answer</h3>
+            <form id="answer-form">
+                <label for="answer-content">Your Answer:</label><br>
+                <textarea id="answer-content" name="answer-content"></textarea><br>
+                <input type="submit" value="Post Answer">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Local Community Forum</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
